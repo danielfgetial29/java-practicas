@@ -89,21 +89,53 @@ public class bucle {
 //        }
 //        System.out.println(numero2 + " ");
 
+//        while (true){
+//            System.out.println("Ingrese un entero positivo: ");
+//            int num = Integer.valueOf(scanner.nextLine());
+//
+//            if (num == 0) {
+//                break;
+//            }
+//
+//            if (num < 0) {
+//                System.out.println("Numero invalido");
+//                continue;
+//            }
+//
+//            System.out.println(num * num);
+//        }
+
+        // Contar intentos ingresados
+        int contador = 0;
+
+//        while (true){
+//            System.out.println("Ingrerse un numero por favor:");
+//            int num = Integer.valueOf(scanner.nextLine());
+//
+//            if(num == 0){
+//                break;
+//            }
+//            if (num != 0){
+//                contador += 1;
+//            }
+//        }
+//        System.out.println("Numero de numeros ingresados: "+ contador);
+
+        // Contar numeros negativos
         while (true){
-            System.out.println("Ingrese un entero positivo: ");
+            System.out.println("Ingrerse un numero por favor:");
             int num = Integer.valueOf(scanner.nextLine());
 
-            if (num == 0) {
+            if(num == 0){
                 break;
             }
-
-            if (num < 0) {
-                System.out.println("Numero invalido");
-                continue;
+            if (num < 0){
+                contador += 1;
             }
-
-            System.out.println(num * num);
         }
+        System.out.println("Numero de numeros negativos: "+ contador);
+        scanner.close();
+
         scanner.close();
     }
 }
