@@ -106,7 +106,7 @@ public class bucle {
 //        }
 
         // Contar intentos ingresados
-        int contador = 0;
+        //int contador = 0;
 
 //        while (true){
 //            System.out.println("Ingrerse un numero por favor:");
@@ -122,6 +122,22 @@ public class bucle {
 //        System.out.println("Numero de numeros ingresados: "+ contador);
 
         // Contar numeros negativos
+//        while (true){
+//            System.out.println("Ingrerse un numero por favor:");
+//            int num = Integer.valueOf(scanner.nextLine());
+//
+//            if(num == 0){
+//                break;
+//            }
+//            if (num < 0){
+//                contador += 1;
+//            }
+//        }
+//        System.out.println("Numero de numeros negativos: "+ contador);
+
+        // Sumar todos los numeros ingresados
+        int contador = 0;
+
         while (true){
             System.out.println("Ingrerse un numero por favor:");
             int num = Integer.valueOf(scanner.nextLine());
@@ -129,12 +145,9 @@ public class bucle {
             if(num == 0){
                 break;
             }
-            if (num < 0){
-                contador += 1;
-            }
+            contador += num;
         }
-        System.out.println("Numero de numeros negativos: "+ contador);
-        scanner.close();
+        System.out.println("Suma de los numeros: "+ contador);
 
         scanner.close();
     }
