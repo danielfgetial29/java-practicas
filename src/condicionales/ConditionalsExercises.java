@@ -18,6 +18,18 @@ public class ConditionalsExercises {
 
 
         // 2. Declara dos números y muestra cuál es mayor, o si son iguales.
+        System.out.println("Ingresa un numero: ");
+        int num1 = Integer.valueOf(scanner.nextLine());
+
+        System.out.println("Ingresa el segundo numero: ");
+        int num2 = Integer.valueOf(scanner.nextLine());
+
+        if (num1 > num2){
+            System.out.printf("%d es mayor que %d", num1, num2);
+        } else if (num1 < num2) {
+            System.out.printf("%d es mayor que %d", num2, num1);
+        }else
+            System.out.println("Los numeros son iguales");
 
         // 3. Dado un número, verifica si es positivo, negativo o cero.
 
