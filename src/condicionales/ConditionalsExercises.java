@@ -1,9 +1,21 @@
 package condicionales;
 
+import java.util.Scanner;
+
 public class ConditionalsExercises {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+
         // 1. Establece la edad de un usuario y muestra si puede votar (mayor o igual a 18).
+        System.out.println("Ingrese su edad: ");
+        int edad = Integer.valueOf(scanner.nextLine());
+
+        if (edad >= 18){
+            System.out.println("Tienes permiso de votar");
+        }else
+            System.out.println("No puedes votar");
+
 
         // 2. Declara dos números y muestra cuál es mayor, o si son iguales.
 
